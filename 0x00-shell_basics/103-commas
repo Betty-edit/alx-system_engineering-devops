@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1ap  | awk '{printf "%s%s" , $0, NR%2==0 ? "\n" :" , "}' & echo " "
+ls -1ap  | tr '\n' ' ' | awk '{printf "%s%s" , $0, NR%2==0 ? "\n" :" , "}' & echo " "
