@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1amp  | tr '\n' ' ' | awk '{printf "%s%s" , $0, NR%2==0 ? "\n" :" , "}' & echo " "
+ls -xamp
